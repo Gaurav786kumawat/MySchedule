@@ -1,0 +1,33 @@
+/* Light mode (default) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #b0b0b0;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+  color: #ffa500;
+}
+
+body.dark-mode ul li {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode a {
+  color: #1e90ff;
+}
+
+body.dark-mode .day {
+  background-color: #0077b6;
+  color: #ffffff;
+}
