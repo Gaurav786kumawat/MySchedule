@@ -148,7 +148,7 @@ p {
   border-radius: 0px 15px 0px 15px;
   border-right: 5px black ridge;
   border-bottom: 5px black ridge;
-  width: 200px;
+  width: 240px;
   height: 53px;
   line-height: 20px;
   font-weight: bold;
@@ -247,3 +247,43 @@ strong {
   -o-border-radius: 15px;
   cursor: pointer;
 }
+
+/* Checkbox Design */
+  .days .day {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+
+  .days .day input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .days .day input[type="checkbox"]:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+    position: relative;
+  }
+
+  .days .day input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .days .day:hover input[type="checkbox"] {
+    border-color: #888;
+  }
